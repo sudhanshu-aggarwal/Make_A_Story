@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story</title>
+    <link rel="stylesheet" type="text/css" href="makestory.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        p{
+            padding: 0 60px;
+        }
+        h1{
+            padding-top: 20px;
+        }
+        span{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body onload="bindData()">
+    <header>
+        <img src="images/download1.png" alt="Make-Story" width="200px" height="125px">
+    </header><br>
+    <div class="container">
+        <h1>The <span class="animal-1"></span> and The <span class="animal-2"></span></h1><br>
+        <p>
+            A <span class="animal-1"></span> was making fun of the <span class="animal-2"></span> one day for being so slow.
+            <br><br>
+
+            "Do you ever get anywhere?" he asked with a mocking laugh. <br><br>
+
+            "<span class="radio"></span>", replied the <span class="animal-2"></span>, "but I get there <span class="speed"></span> than you think. I'll run you a race and prove it." <br><br>
+
+            The <span class="animal-1"></span> was much <span class="adj-1"></span> at the idea of running a race with the <span class="animal-2"></span>, but for the fun of the thing he agreed. So the <span class="animal-3"></span>, who had consented to act as judge, marked the distance yelled, "<span class="quote"></span>". <br><br>
+
+            The <span class="animal-1"></span> was soon far out of sight, and to make the <span class="animal-2"></span> feel very deeply how ridiculous it was for him to try a race with a <span class="animal-1"></span>, he went off the course to practice <span class="verb-1"></span> for <span class="num1"></span> hours until the <span class="animal-2"></span> should catch up. <br><br>
+
+            The <span class="animal-2"></span> meanwhile kept going slowly but steadily, and, after a time, passed the place where the <span class="animal-1"></span> was <span class="verb-1"></span>. The <span class="animal-1"></span> was so caught up in <span class="verb-1"></span>; and when at last he did stop, the <span class="animal-2"></span> was near the goal. The <span class="animal-1"></span> now ran his swiftest, but he could not overtake the <span class="animal-2"></span> in time.
+        </p>
+        <br>
+        <h1>Moral of the Story:</h1><br><br>
+        <p style="padding-bottom: 50px;">
+            "<span class="msg"></span>"
+        </p>
+    </div>
+</body>
+<script>
+    function bindData(){
+        //localstorage
+        var animal1 = localStorage.getItem("animal1");
+        $(".animal-1").text(animal1);
+
+        var animal2 = localStorage.getItem("animal2");
+        $(".animal-2").text(animal2);
+
+        var animal3 = localStorage.getItem("animal3");
+        $(".animal-3").text(animal3);
+
+        var adj1 = localStorage.getItem("adj1");
+        $(".adj-1").text(adj1);
+
+        var verb1 = localStorage.getItem("verb1");
+        $(".verb-1").text(verb1);
+
+        var radio = localStorage.getItem("radio");
+        $(".radio").text(radio);
+
+        var speed = localStorage.getItem("speed");
+        $(".speed").text(speed);
+
+        var quote = localStorage.getItem("quote");
+        $(".quote").text(quote);
+
+        var num1 = localStorage.getItem("num1");
+        $(".num1").text(num1);
+
+        var msg = localStorage.getItem("msg");
+        $(".msg").text(msg);
+    }
+</script>
+</html>

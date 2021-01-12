@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+}
+body{
+	background-color: #008a25;
+}
+header{
+	background-color: white;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10px;
+	border-radius: 25px;
+	text-align: center;
+}
+div.container{
+	width: 60%;
+	background-color: #ffeeb0;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 25px;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+div.container-1{
+	height: 20vh;
+	color: #008a25;
+}

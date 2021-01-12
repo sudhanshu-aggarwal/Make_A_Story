@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="makestory.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Make Story</title>
+</head>
+<body>
+	<header>
+			<img src="images/download1.png" alt="Make-Story" width="200px" height="125px">
+	</header><br>
+	<div class="container">
+		<div class="container-1"><br><br>
+			<h2>Complete the Form<br>Complete the Story</h2>
+		</div>
+		<hr>
+		<form id="form1"><br>
+			<label for="animal-1" style="float: left; padding-left: 120px;">Animal:</label>
+			<label for="animal-2" style="float: right; padding-right: 200px;">Another Animal:</label><br><br>
+
+			<input type="text" name="animal-1" id="animal-1" required style="float: left; margin-left: 50px;" placeholder="Animal Name">
+			<input type="text" name="animal-2" id="animal-2" required style="float: right; margin-right: 150px;" placeholder="Animal Name"><br><br>
+
+			<label for="animal-3" style="float: left; padding-left: 95px;">One More Animal:</label>
+			<label for="adj-1" style="float: right; padding-right: 180px;">Adjective (past tense):</label><br><br>
+
+			<input type="text" name="animal-3" id="animal-3" required style="float: left; margin-left: 50px;" placeholder="Animal Name">
+			<input type="text" name="adj-1" id="adj-1" required style="float: right; margin-right: 150px;" placeholder="Adjective in past tense"><br><br>
+
+			<label for="verb-1" style="float: left; padding-left: 75px;">Verb (ends in -ing):</label>
+			<label for="num-1" style="float: right; padding-right: 250px;">Number:</label><br><br>
+
+			<input type="text" name="verb-1" id="verb-1" required style="float: left; margin-left: 50px;" placeholder="ing form of verb">
+			<input type="Number" name="num-1" id="num-1" required style="float: right; margin-right: 150px;" placeholder="Any Number"><br><br>
+
+			<label for="quote" style="float: left; padding-left: 80px;">Motivational Quote:</label>
+			<label for="speed" style="float: right; margin-right: 150px;">Relative Speed (ends in -er):</label><br><br>
+
+			<input type="text" name="quote" id="quote" list="quote-choices" required style="float: left; margin-left: 50px;" placeholder="Any Quote">
+			<datalist id="quote-choices">
+				<option value="CEDCOSS"></option>
+				<option value="CEDCommerce"></option>
+				<option value="BotMyWork"></option>
+				<option value="MakeWebBetter"></option>
+				<option value="MageNative"></option>
+			</datalist>
+			<select name="speed" id="speed" required style="float: right; margin-right: 225px;">
+				<option value="Faster">Faster</option>
+				<option value="Quicker">Quicker</option>
+				<option value="Speedier">Speedier</option>
+			</select><br><br><br>
+
+			<span style="float: left; padding-left: 70px;">Yes or No: </span>
+			<div style="float: left; padding-left: 25px;">
+				<input type="radio" name="answer" value="Yes" id="Yes" required>
+				<label for="Yes">Yes</label>
+				<input type="radio" name="answer" value="No" id="No" required>
+				<label for="No">No</label>
+			</div><br><br>
+
+			<label for="message" style="float: left; margin-left: 100px;">Meaningful Message:</label>
+			<textarea id="message" name="message" rows="5" cols="50" required placeholder="Any Meaningful Message" style="float: right; margin-right: 50px;"></textarea><br><br>
+			
+			
+			<br><br><br><br><br><input type="submit" id="btn" name="submit" value="Form My Story!" style="background-color: #008a25; color: #ffeeb0; height: 8vh;"><br><br>
+		</form>
+	</div>
+
+	<script src="makestory.js"></script>
+</body>
+</html>
